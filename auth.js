@@ -44,8 +44,9 @@ passport.use(new GitHubStrategy({
     callbackURL: "http://127.0.0.1:3000/auth/github/callback"
   },
   function(accessToken, refreshToken, profile, cb) {
-    User.findOrCreate({ githubId: profile.id }, function (err, user) {
-      return cb(err, user);
-    });
+    // 此处正常逻辑应该是githubId去数据查询用户
+    // User.findOrCreate({ githubId: profile.id }, function (err, user) {
+      return cb(null, profile);
+    // });
   }
 ));
