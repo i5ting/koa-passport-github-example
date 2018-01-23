@@ -1,0 +1,33 @@
+{
+  "name": "koa-passport-example",
+  "author": "Markus Ast <npm.m@rkusa.st",
+  "version": "3.0.0",
+  "private": true,
+  "keywords": [
+    "koa",
+    "passport",
+    "auth",
+    "authentication"
+  ],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "homepage": "https://github.com/rkusa/koa-passport-example",
+  "dependencies": {
+    "handlebars": "^4.0",
+    "koa": "^2.2",
+    "koa-bodyparser": "^4.2",
+    "koa-passport": "^3.0",
+    "koa-route": "^3.0",
+    "koa-session": "^5.0.0",
+    "passport-github": "^1.1.0",
+    "passport-local": "^1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rkusa/koa-passport-example.git"
+  },
+  "engines": {
+    "node": ">=8"
+  }
+}
